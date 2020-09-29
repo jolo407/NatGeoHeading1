@@ -1,0 +1,171 @@
+/* global*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --dark:#1f1f1f;
+    --yll: rgb(238, 205, 17);
+}
+
+
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+/* menu */
+.img-logo{
+    width: 110px;
+    display: none;
+}
+
+.img-logo-square{
+    display: block;
+    width: auto;
+    height: 50px;
+}
+
+.menu-text{
+    display: none;
+}
+@media(min-width:768px){
+    .img-logo{
+        display: block;
+        width: 110px;
+        height: 30px;
+        padding-left: .5rem;
+        padding-top: .5rem;
+
+    }
+    .img-logo-square{
+        display: none;
+    }
+    .menu-text{
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        font-size: 13px;
+        font-weight: 700;
+
+    }
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between; 
+    background-color: white;
+    height: 50px;
+}
+
+.menu i{
+    font-size: 16px;
+    color:var(--dark);
+}
+
+.fa-search{
+    display: none;
+
+}
+
+.subscribe-text{
+    display: none;
+}
+
+@media(min-width:768px){
+    .fa-search{
+        display: block;
+    }
+    .subscribe-text{
+        display: block;
+    }
+}
+.menu-subsection{
+    display: flex;
+    align-items: center;
+}
+
+.fa-user{
+    margin-right: 1rem;
+    padding-right: 1rem;
+    border-right: 1px solid #b8b5b5;
+}
+
+.fa-user:hover{
+    color: var(--dark);
+    cursor: pointer;
+}
+
+@media(min-width:768px){
+    .fa-user{
+        margin-right: .5rem;
+        padding-right: .5rem;
+        border: none;
+    }
+    .subscribe-text{
+        margin-right: .5rem;
+        padding-right: .5rem;
+    }
+    .fa-search{
+        margin-right: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.fa-angle-double-down{
+    margin-right: 1rem;
+}
+/* main*/
+main{
+    background-color: black;
+    height: 100vh;
+    color: white;
+    
+}
+
+
+.title h1{
+    font-size: 42px;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Secular One', sans-serif;
+    margin: 15px;
+}
+
+.title p{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 5px;
+    ;
+}
+hr{
+    width: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:  yellow;
+    height: 2px;
+    margin-top: 25px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid yellow;
+
+}
+@media(min-width:768px){
+    hr{
+        width: 35px;
+        margin-left: auto;
+        margin-right: auto ;
+    }
+}
+
+
+
+
